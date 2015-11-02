@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+        <title>RefugiAPP</title>
+        <script src="js/jquery-2.0.2.js"></script>
+    	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body> 
+    <div data-role="page" id="page0">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>RefugiAPP</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<div id="logo_image">
+        		<img src="img/logoApp.png"></img>
+        	</div>
+        	<p class="intro"><b>RefugiAPP</b> te ayudará con las frases que necesitas día a día en este nuevo país.</p>
+        	<p class="intro"><b>RefugiAPP</b> هذا التطبيق يساعد في العبارات التي يحتاجون إليها كل يوم في هذا البلد.</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<p>Made in ETSIB</p>
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-grid">Acceder al menú</a>
+		</div>        
+  	</div>
+    <div data-role="page" id="page1">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Menu principal</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#hospital"><img src="img/Hospi.png"></img><p>Hospital</p></a></li>
+					<li><a href="#policia"><img src="img/policia.png"></img><p>Policia</p></a></li>
+					<li><a href="#panaderia"><img src="img/panaderia.png"></img><p>Panaderia</p></a></li>
+					<li><a href="#estacion"><img src="img/estacion.png"></img><p>Estacion Tren/Bus</p></a></li>
+					<li><a href="#farmacia"><img src="img/Farmacia.png"></img><p>Farmacia</p></a></li>
+					<li><a href="#supermercado"><img src="img/supermercado.png"></img><p>Supermercado</p></a></li>
+					<li><a href="#ayuntamiento"><img src="img/ayuntamiento.png"></img><p>Ayuntamiento</p></a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+		</div>        
+  	</div>
+  	
+  	<div data-role="page" id="hospital">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>HOSPITAL</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+		 		<a href="#popupHospital1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Hola.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupHospital2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>No me encuentro bien.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupHospital3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Me duele.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupHospital4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Tengo fiebre.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupHospital5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>¿Qué tengo que tomar?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupHospital6" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Gracias doctor/a.</p>
+				</a>
+			</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Pagina inicial</a>
+			<a href="https://www.google.es/maps/search/hospital" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupHospital1">
+        	<audio controls>
+  				<source src="audio/hospital/hola.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupHospital2">
+        	<audio controls>
+  				<source src="audio/hospital/no_me_encuentro_bien.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupHospital3">
+        	<audio controls>
+  				<source src="audio/hospital/me_duele.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupHospital4">
+        	<audio controls>
+  				<source src="audio/hospital/fiebre.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupHospital5">
+        	<audio controls>
+  				<source src="audio/hospital/que_tomar.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>      
+		<div data-role="popup" id="popupHospital6">
+        	<audio controls>
+  				<source src="audio/hospital/gracias_doctor.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>  
+  	</div>
+  	
+  	<div data-role="page" id="policia">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>POLICÍA</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+				<a href="#popupPolicia1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Buenos dias.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupPolicia2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+				 	<p>Buenas tardes.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupPolicia3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Buenas noches.</p>
+				</a>
+			</li>
+				<li>
+				<a href="#popupPolicia4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Necesito ayuda.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPolicia5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>No se español.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPolicia6" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Me han robado.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPolicia7" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Me he perdido.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPolicia8" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Muchas gracias.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPolicia9" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Adios.</p>
+				</a>
+				</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/policia" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupPolicia1">
+        	<audio controls>
+  				<source src="audio/policia/buenos_dias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPolicia2">
+        	<audio controls>
+  				<source src="audio/policia/buenas_tardes.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia3">
+        	<audio controls>
+  				<source src="audio/policia/buenas_noches.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia4">
+        	<audio controls>
+  				<source src="audio/policia/ayuda.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia5">
+        	<audio controls>
+  				<source src="audio/policia/esp.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia6">
+        	<audio controls>
+  				<source src="audio/policia/robado.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia7">
+        	<audio controls>
+  				<source src="audio/policia/perdido.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia8">
+        	<audio controls>
+  				<source src="audio/policia/gracias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupPolicia9">
+        	<audio controls>
+  				<source src="audio/policia/adios.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+  	</div>
+  	
+  	<div data-role="page" id="panaderia">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>PANADERÍA</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+				<a href="#popupPanaderia1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Hola.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupPanaderia2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Quiero una barra de pan, por favor.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPanaderia3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Quiero eso.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPanaderia4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>¿Cuánto es?</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPanaderia5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Gracias.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupPanaderia6" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Adios.</p>
+				</a>
+				</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/panadería" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupPanaderia1">
+        	<audio controls>
+  				<source src="audio/panaderia/hola.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPanaderia2">
+        	<audio controls>
+  				<source src="audio/panaderia/barra.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPanaderia3">
+        	<audio controls>
+  				<source src="audio/panaderia/eso.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPanaderia4">
+        	<audio controls>
+  				<source src="audio/panaderia/cuanto.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPanaderia5">
+        	<audio controls>
+  				<source src="audio/panaderia/gracias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupPanaderia6">
+        	<audio controls>
+  				<source src="audio/panaderia/adios.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>        
+  	</div>
+  	
+  	<div data-role="page" id="estacion">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>ESTACIÓN TREN/BUS</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+				<a href="#popupEstacion1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Hola.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupEstacion2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Quiero un billete.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupEstacion3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Quiero ir a...</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupEstacion4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>¿Cuánto cuesta?</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupEstacion5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Hasta luego.</p>
+				</a>
+				</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/estacion+de+autobuses" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-navigation">Autobuses</a>
+			<a href="https://www.google.es/maps/search/estacion+de+tren" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-navigation">Tren</a>
+		</div>
+		<div data-role="popup" id="popupEstacion1">
+        	<audio controls>
+  				<source src="audio/estacion/hola.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupEstacion2">
+        	<audio controls>
+  				<source src="audio/estacion/billete.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupEstacion3">
+        	<audio controls>
+  				<source src="audio/estacion/ir_a.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupEstacion4">
+        	<audio controls>
+  				<source src="audio/estacion/cuanto_cuesta.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupEstacion5">
+        	<audio controls>
+  				<source src="audio/estacion/hasta_luego.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>        
+  	</div>
+  	
+  	<div data-role="page" id="farmacia">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>FARMACIA</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+				<a href="#popupFarmacia1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Hola.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupFarmacia2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Necesito esta medicina.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupFarmacia3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Me han dado esta receta en el médico.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupFarmacia4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>¿Cuánto es?</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupFarmacia5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Gracias.</p>
+				</a>
+				</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/farmacia" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupFarmacia1">
+        	<audio controls>
+  				<source src="audio/farmacia/hola.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupFarmacia2">
+        	<audio controls>
+  				<source src="audio/farmacia/medicina.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupFarmacia3">
+        	<audio controls>
+  				<source src="audio/farmacia/receta.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupFarmacia4">
+        	<audio controls>
+  				<source src="audio/farmacia/cuanto.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupFarmacia5">
+        	<audio controls>
+  				<source src="audio/farmacia/gracias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>        
+  	</div>
+  	
+  	<div data-role="page" id="supermercado">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>SUPERMERCADO</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        	<li>
+				<a href="#popupSupermercado1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Cóbrame</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupSupermercado2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>¿Cuánto es?</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupSupermercado3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Una bolsa, por favor.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#popupSupermercado4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Gracias.</p>
+				</a>
+			</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/supermercado" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupSupermercado1">
+        	<audio controls>
+  				<source src="audio/supermercado/cobrame.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupSupermercado2">
+        	<audio controls>
+  				<source src="audio/supermercado/cuanto_es.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupSupermercado3">
+        	<audio controls>
+  				<source src="audio/supermercado/bolsa.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div> 
+		<div data-role="popup" id="popupSupermercado4">
+        	<audio controls>
+  				<source src="audio/supermercado/gracias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>         
+  	</div>
+  	
+  	<div data-role="page" id="ayuntamiento">
+        <div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>AYUNTAMIENTO</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        	<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-icon="audio" data-icon->
+        		<li>
+				<a href="#popupAyuntamiento1" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Buenos dias.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento2" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Buenas tardes.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento3" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Soy refugiado.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento4" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Necesito documentación.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento5" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>No se español</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento6" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Gracias.</p>
+				</a>
+				</li>
+				<li>
+				<a href="#popupAyuntamiento7" data-rel="popup" data-transition="pop">
+					<h2>[FRASE EN ÁRABE]</h2>
+					<p>Adios.</p>
+				</a>
+				</li>
+			</ul>
+        </div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<a href="#page1" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-grid">Menú</a>
+			<a href="https://www.google.es/maps/search/ayuntamiento" class="ui-btn ui-btn-inline ui-btn-right ui-btn-icon-right ui-icon-navigation">Google Maps</a>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento1">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/buenos_dias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento2">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/buenas_tardes.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento3">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/refugiado.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento4">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/documentacion.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento5">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/no_se.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento6">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/gracias.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>
+		<div data-role="popup" id="popupAyuntamiento7">
+        	<audio controls>
+  				<source src="audio/ayuntamiento/adios.mp3" type="audio/mpeg">
+				Tu navegador no soporta la reproducción de MP3.
+			</audio>
+		</div>        
+  	</div>
+
+  	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
